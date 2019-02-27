@@ -38,13 +38,12 @@ signInWidgetConfig = {
     el: '#widget-container'
   }, function success(res) {
     if (res.status === 'SUCCESS') {
-      res.session.setCookieAndRedirect('https://tosatsu.okta.com/app/UserHome');
+      res.session.setCookieAndRedirect('https://inam.oktapreview.com/app/UserHome');
     } else {
       // The user can be in another authentication state that requires further action.
       // For more information about these states, see:
       //   https://github.com/okta/okta-signin-widget#rendereloptions-success-error
     }
   });
-          
-  baseUrl: 'https://inam.oktapreview.com',
+
   
