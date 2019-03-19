@@ -23,7 +23,7 @@ signInWidgetConfig = {
       router: true,                       // Leave this set to true for the API demo
     },
     baseUrl: 'https://inam.oktapreview.com',
-    clientId: '0oaexo9c530ZUVuOj0h7',
+    clientId: '0oajs9m0tdpT42jf20h7',
     redirectUri: 'https://inam.oktapreview.com/',
     authParams: {
     issuer: 'https://inam.oktapreview.com/oauth2/default',
