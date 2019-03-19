@@ -23,13 +23,13 @@ signInWidgetConfig = {
       router: true,                       // Leave this set to true for the API demo
     },
     baseUrl: 'https://inam.oktapreview.com',
-    clientId: '0oajs9m0tdpT42jf20h7',
-    redirectUri: 'https://mvoinescu.github.io/inam_okta_login',
-    authParams: {
-    issuer: 'https://inam.oktapreview.com/oauth2/default',
-    responseType: ['id_token', 'token'],
-    scopes: ['openid', 'email', 'profile'],
-    },
+    //clientId: '0oajs9m0tdpT42jf20h7',
+    //redirectUri: 'https://mvoinescu.github.io/inam_okta_login',
+    //authParams: {
+    //issuer: 'https://inam.oktapreview.com/oauth2/default',
+    //responseType: ['id_token', 'token'],
+    //scopes: ['openid', 'email', 'profile'],
+    //},
   };
 
   var signIn = new OktaSignIn(signInWidgetConfig);
