@@ -24,7 +24,7 @@ signInWidgetConfig = {
     },
     baseUrl: 'https://inam.oktapreview.com',
     clientId: '0oajs9m0tdpT42jf20h7',
-    redirectUri: 'https://inam.oktapreview.com/',
+    redirectUri: 'https://inam.oktapreview.com',
     authParams: {
     issuer: 'https://inam.oktapreview.com/oauth2/default',
     responseType: ['id_token', 'token'],
