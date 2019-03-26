@@ -18,12 +18,19 @@ redirectUri: 'https://inam.oktapreview.com',
 authParams: {
 issuer: 'default',
 responseType: ['id_token','token'],
-display: 'page'
+display: 'page',
+features: {
+    idpDiscovery: true
+    }
 }
 });
 signIn.session.get(function (res) {
 // Session exists, show logged in state.
-if (res.status === 'ACTIVE') {
+if (res.status === 'IDP_DISCOVERY') {
+      res.idpDiscovery.redirectToIdp('/a/app/request/context');
+      return;
+    }
+else if (res.status === 'ACTIVE') {
     res.session.setCookieAndRedirect('https://inam.oktapreview.com/app/UserHome');
 }
 // No session, or error retrieving the session. Render the Sign-In Widget.
